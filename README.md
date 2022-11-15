@@ -2,7 +2,7 @@
 
 ## 1. Model schematic diagram.
 
-![](E:\小论文\图片\示意图.png)
+![](https://github.com/19965223759/LF-DLRN-BC/blob/main/schematic%20diagram.png)
 
 The images on T4 and T11 and CPBC were respectively put into DenseNet161, ResNet50 and GradientBoosting for classification, and late_fusion_prob was obtained by late fusion method. The significant clinicopathological features obtained by multivariate Cox regression and late_fusion_prob were used as predictors to construct the nomogram. Finally, the KM curve was adopted to analyze the survival of patients with distant metastases.
 
