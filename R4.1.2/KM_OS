@@ -1,0 +1,10 @@
+library("survival")
+library("survminer")
+raw_data<-read.csv("./nomogram_cox_clinical.csv",stringsAsFactors = FALSE)
+str(raw_data)
+fit <- survfit(Surv(OS, dead) ~ group, data = raw_data)
+ggsurvplot(fit,data = raw_data,conf.int = TRUE,
+           xlab = "Time(days)",
+           ylab = "Overall Survival",
+           legend.labs = c("Low metastasis risk group", "High metastasis risk group"),
+           pval = TRUE, risk.table = TRUE)
